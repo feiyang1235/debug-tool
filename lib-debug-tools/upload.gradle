@@ -1,0 +1,15 @@
+apply plugin: 'maven'
+afterEvaluate {project ->
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                pom.groupId = "com.haixue.debugtool"
+                pom.artifactId = "debugtool"
+                pom.version = "1.0.0"
+                repository(url:"http://192.168.16.219:8081/repository/maven-releases/") {
+                    authentication(userName: "admin", password: "admin123")
+                }
+            }
+        }
+    }
+}

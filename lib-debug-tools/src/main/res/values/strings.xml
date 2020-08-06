@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="switch_env">切换环境</string>
+    <string name="app_info">App信息</string>
+    <string name="switch_info">开关配置</string>
+</resources>
